@@ -10,13 +10,22 @@
 		content="The MDN Web Docs Learning Area aims to provide
 		complete beginners to the Web with all they need to know to get
 		started with developing web sites and applications." />
+		<meta
+  property="og:image"
+  content="https://developer.mozilla.org/mdn-social-share.png" />
+<meta
+  property="og:description"
+  content="The Mozilla Developer Network (MDN) provides
+information about Open Web technologies including HTML, CSS, and APIs for both Web sites
+and HTML Apps." />
+<meta property="og:title" content="Mozilla Developer Network" />
 </head>
 <body>
 	<ol>
 		<h1>Mozilla is cool</h1>
-		<li><h4>图片的属性有：src(图片的路径),alt(描述信息，当图片加载失败时显示)，宽高</h4></li>
+		<li>图片的属性有：src(图片的路径),alt(描述信息，当图片加载失败时显示)，宽高</li>
 		<img src="images/firefox-icon.png" alt="firefox-icon" width="300" height="300">
-		<li><h4>列表分有序和无序（ul,ol）,每一列都包含在这两个元素中（li）</h4></li>
+		<li>列表分有序和无序（ul,ol）,每一列都包含在这两个元素中（li）</li>
 		<p>At Mozilla,we're a global community of
 			<ul>
 				<li>technologists</li>
@@ -33,12 +42,89 @@
 		<a href="https://www.mozilla.org" title="The Mozilla homepage">最喜欢的网站</a>
 		<li>以粗体突出显示（strong）</li>
 		<p>my cat is very <strong>grumpy</strong></p>
-		<li>按钮标签（button）：用户的点击可以在js文件中处理</li>
+		<li>按钮标签（button）：用户的点击可以在js文件中处理,script中的defer属性是HTML解析完后再加载</li>
+		<script src="scripts/main.js" defer></script>
 		<button>Change user</button>
-		<script src="scripts/main.js"></script>
 		<li>特殊符号显示（以一个与号（&）开始，并以一个分号（;）结束， 中间部分为 lt,gt,quot,apos,amp）</li>
 		<p>&lt;, &gt;, &quot;, &apos;, &amp;</p>
-		<li>在head标签中的meta标签的用途：其中name为description，content属性中的描述信息，可以搜索引擎优化（SEO），更容易被搜索到</li>
+		<li>在head标签中的meta标签的用途：其中name为description，content属性中的描述信息，可以搜索引擎优化（SEO），更容易被搜索到,
+			在标签html中定义lang属性，也有助于搜索，中文简体值为 zh-CN。也可以在特定标签中定义，如 span 
+		</li>
+		<p>Japanese example: <span lang="ja">ご飯が熱い。</span>.</p>
+		<li>对于文档，应注重层次结构，正确的使用标题，顺序使用，每页不超过三个</li>
+		<h1>三国演义</h1>
+
+		<p>罗贯中</p>
+
+		<h2>第一回 宴桃园豪杰三结义 斩黄巾英雄首立功</h2>
+
+		<p>
+		话说天下大势，分久必合，合久必分。周末七国分争，并入于秦。及秦灭之后，楚、汉分争，又并入于汉……
+		</p>
+
+		<h2>第二回 张翼德怒鞭督邮 何国舅谋诛宦竖</h2>
+
+		<p>
+		且说董卓字仲颖，陇西临洮人也，官拜河东太守，自来骄傲。当日怠慢了玄德，张飞性发，便欲杀之……
+		</p>
+
+		<h3>却说张飞</h3>
+
+		<p>
+		却说张飞饮了数杯闷酒，乘马从馆驿前过，见五六十个老人，皆在门前痛哭。飞问其故，众老人答曰：“督邮逼勒县吏，欲害刘公；我等皆来苦告，不得放入，反遭把门人赶打！”……
+		</p>
+		<li>要注重语义，而不是单单为了显示，em标签有强调的意义，如果这些内容进行朗读，em中的内容将会重音，strong 也是。</li>
+		<p>我很<em>庆幸</em>你没有<em>迟到</em>。</p>
+		<p>这杯液体<strong>毒性很大</strong>。</p>
+		<p>就指望你了，千万<strong>不要</strong>迟到！</p>
+		<li> b,i,u 这些属于表现元素，没有语义</li>
+		<p>打招呼（<i>hello</i>），根据<b>语义</b>而不是外观，改掉写<u>错别字</u>的毛病。</p>
+		<li>有三种类型的列表：无序列表、有序列表和描述列表。</li>
+		<h1>宫保鸡丁的做法</h1>
+		<p>宫保鸡丁，川菜系中的传统名菜，由鸡丁、干辣椒、花生米等炒制而成。由于其入口鲜辣，鸡肉的鲜嫩配合花生的香脆，广受大众欢迎。</p>
+		<p>相传宫保鸡丁是清朝光绪年间的署理四川总督丁宝桢所发明，是他招待客人时叫家厨煮的菜肴。由于丁宝桢后来被封为东宫少保（太子少保），所以被称为“丁宫保”，而这道菜亦被称为“宫保鸡丁”</p>
+
+		<h2>原料</h2>
+		<ul>
+		<li>去骨鸡胸肉：一斤八两</li>
+		<li>干红辣椒：八钱</li>
+		<li>炸花生米：一两五钱</li>
+		<li>花椒粒：两大匙</li>
+		<li>葱：两根（切段）</li>
+		<li>蛋白：一个</li>
+		<li>淀粉：三大匙</li>
+		<li>酱油：两大匙</li>
+		<li>蒜末：半茶匙</li>
+		<li>糖：半茶匙</li>
+		<li>白醋：一茶匙</li>
+		<li>色拉油：适量</li>
+		<li>盐：两茶匙</li>
+		</ul>
+
+		<h2>做法</h2>
+		<ol>
+		<li>先用蛋白一个、盐半茶匙及淀粉两大匙搅拌均匀，调成“腌料”，鸡胸肉切成约一厘米见方的碎丁并用“腌料”搅拌均匀，腌渍半小时。</li>
+		<li>用酱油一大匙、淀粉水一大匙、糖半茶匙、盐四分之一茶匙、白醋一茶匙、蒜末半茶匙调拌均匀，调成“综合调味料”。</li>
+		<li>鸡丁腌好以后，色拉油下锅烧热，先将鸡丁倒入锅内，用大火快炸半分钟，炸到变色之后，捞出来沥干油汁备用。</li>
+		<li>在锅里留下约两大匙油，烧热后将切好的干辣椒下锅，用小火炒香后，再放入花椒粒和葱段一起爆香。随后鸡丁重新下锅，用大火快炒片刻后，再倒入“综合调味料”继续快炒。</li>
+		<li>如果你采用正宗川菜做法，最后只需加入花生米，炒拌几下就可以起锅了。</li>
+		<li>如果你在北方，可加入黄瓜丁、胡萝卜丁和花生米，翻炒后起锅。</li>
+		</ol>
+
+		<h2>大千鸡</h2>
+		<p>张大千居加拿大期间，曾按自己喜好改变宫保鸡丁的做法，并传授当地厨师，厨师将之命名为“大千鸡”，以兹纪念。大千鸡与宫保鸡丁不同之处，是使用经细工去皮、出骨、剔膜的鸡腿肉，以干辣椒、豆瓣酱为味，而且不用花生。</p>
+		<li>描述列表如下：它使用的是 dl，dt，dd 组合</li>
+		<dl>
+		<dt>旁白</dt>
+		<dd>
+			戏剧中，为渲染幽默或戏剧性效果而进行的场景之外的补充注释念白，只面向观众，内容一般都是角色的感受、想法、以及一些背景信息等。
+		</dd>
+		<dd>
+			写作中，指与当前主题相关的一段内容，通常不适于直接置于内容主线中，因此置于附近的其他位置（通常位于主线内容旁边一个文本框内）。
+		</dd>
+		</dl>
+		<li>html的语义标签有：页眉（header），导航栏（nav），主内容（main），主内容中还有子内容区段语义元素（article，section）但div不是语义元素，是表示元素，侧边栏（aside）经常放在main中，页脚（footer）</li>
+		<a href="semantic.html" title="这里有大量的语义元素">构建文档</a>
 	</ol>
 </body>
 </html>
