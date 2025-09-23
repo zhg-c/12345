@@ -1,25 +1,7 @@
-const myImage = document.querySelector("img");
-myImage.onclick = () => {
-  const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/firefox-icon.png") {
-    myImage.setAttribute("src", "images/firefox2.png");
-  } else {
-    myImage.setAttribute("src", "images/firefox-icon.png");
-  }
-};
-let myButton = document.querySelector("button");
-let myHeading = document.querySelector("h1");
-function setUserName() {
-  const myName = prompt("Please enter your name.");
-  localStorage.setItem("name", myName);
-  myHeading.textContent = `Mozilla is cool, ${myName}`;
-}
-if (!localStorage.getItem("name")) {
-  setUserName();
-} else {
-  const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Mozilla is cool, ${storedName}`;
-}
-myButton.onclick = function () {
-  setUserName();
-};
+const btn = document.querySelector("button");
+btn.addEventListener("click", () => {
+  btn.textContent = "你点击了这个按钮！！ ??";
+  setTimeout(() => {
+    btn.textContent = "点击这里";
+  }, 1000);
+});
